@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Draggable Button</title>
+<style>
+    /* Style for the button */
+    .drag-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Style for when button is being dragged */
+    .dragging {
+        opacity: 0.5;
+    }
+</style>
+</head>
+<body>
+
+<!-- Button that links to the specified URL and is draggable -->
+<a href="https://tinyurl.com/y5bzyzg3" class="drag-button" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', '')">Drag Me</a>
+
+</body>
+</html>
